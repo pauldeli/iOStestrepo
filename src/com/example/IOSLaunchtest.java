@@ -57,6 +57,8 @@ public class IOSLaunchtest {
 					dr.findElement(By.name("Don’t Allow")).click();
 					dr.findElement(By.xpath("//UIAApplication[1]/UIAWindow[5]/UIAAlert[1]/UIACollectionView[1]/UIACollectionCell[1]/UIAButton[1]")).click();
 					dr.findElement(By.name("Clear text")).click();
+					
+					// Set Location to Los Angeles and verify correct element is shown after setting
 					dr.findElement(By.xpath("//UIAApplication[1]/UIAWindow[2]/UIATableView[1]/UIASearchBar[1]")).click();
 					dr.findElement(By.name("L")).click();
 					dr.findElement(By.name("o")).click();
