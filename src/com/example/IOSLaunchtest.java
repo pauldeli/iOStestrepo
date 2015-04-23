@@ -40,31 +40,30 @@ public class IOSLaunchtest {
 					
 				}
 
-					dr.manage().timeouts().implicitlyWait(120                                                                                                                                                                                                            , TimeUnit.SECONDS);
+					dr.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
+					
+					try {
 					dr.findElement(By.name("Have an account? Log in")).click();
 					dr.findElement(By.xpath("//UIAApplication[1]/UIAWindow[2]/UIATableView[1]/UIATableCell[3]")).click();
-					dr.findElement(By.xpath("//UIAApplication[1]/UIAWindow[2]/UIATableView[2]/UIATableCell[1]/UIATextField[1]")).click();
+                    dr.findElement(By.xpath("//UIAApplication[1]/UIAWindow[2]/UIATableView[2]/UIATableCell[1]/UIATextField[1]")).click();
 					dr.findElement(By.xpath("//UIAApplication[1]/UIAWindow[2]/UIATableView[1]/UIATableCell[1]/UIATextField[1]")).sendKeys("qaautomation2");
 					dr.findElement(By.xpath("//UIAApplication[1]/UIAWindow[2]/UIATableView[1]/UIATableCell[2]/UIAStaticText[1]")).click();
 					dr.findElement(By.xpath("//UIAApplication[1]/UIAWindow[2]/UIATableView[1]/UIATableCell[2]/UIASecureTextField[1]")).sendKeys("testtest");
 					dr.findElement(By.xpath("//UIAApplication[1]/UIAWindow[2]/UIATableView[1]/UIATableCell[3]")).click();
-					// dr.findElement(By.name("OK")).click();
-					// dr.findElement(By.name("OK")).click();
 					dr.findElement(By.xpath("//UIAApplication[1]/UIAWindow[2]/UIAScrollView[1]/UIACollectionView[1]/UIACollectionCell[1]")).click();
 					dr.findElement(By.xpath("//UIAApplication[1]/UIAWindow[2]/UIAScrollView[1]/UIACollectionView[1]/UIACollectionCell[4]")).click();
 					dr.findElement(By.name("Continue")).click();
 					dr.findElement(By.name("Get Started")).click();
 					dr.findElement(By.name("Don’t Allow")).click();
 					dr.findElement(By.xpath("//UIAApplication[1]/UIAWindow[5]/UIAAlert[1]/UIACollectionView[1]/UIACollectionCell[1]/UIAButton[1]")).click();
-				
 					dr.findElement(By.name("Clear text")).click();
 					dr.findElement(By.xpath("//UIAApplication[1]/UIAWindow[2]/UIATableView[1]/UIASearchBar[1]")).click();
 					dr.findElement(By.name("L")).click();
 					dr.findElement(By.name("o")).click();
 					dr.findElement(By.name("s")).click();
 					dr.findElement(By.xpath("//UIAApplication[1]/UIAWindow[2]/UIATableView[1]/UIATableCell[1]")).click();
-                    try {
-                    	dr.findElement(By.name("Los Angeles"));
+                
+                    dr.findElement(By.name("Los Angeles"));
                     	return;
                     
                     } catch (NoSuchElementException e){
